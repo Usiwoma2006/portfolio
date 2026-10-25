@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* light mode */
+  --background: #faf7f5;
+  --surface: #ffffff;
+  --border: #e8dfdb;
+  --foreground: #1c1514;
+  --muted: #6e6360;
+  --accent: #6a0c06;        /* your maroon: buttons, fills */
+  --accent-hover: #8a1a10;
+  --accent-soft: #6a0c06;   /* red text on light: strong contrast */
+  --on-accent: #ffffff;     /* text placed on top of the accent */
 }
 
+
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-accent-hover: var(--accent-hover);
+  --color-on-accent: var(--on-accent);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b0707;
+    --surface: #170f0e;
+    --border: #2d1d1b;
+    --foreground: #ece6e4;
+    --muted: #a89c99;
+    --accent: #8a1a10;        /* lifted slightly so buttons show on black */
+    --accent-hover: #a82216;
+    --accent-soft: #e0675a;   /* light red for text and links on dark */
+    --on-accent: #ffffff;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  outline: 6px solid var(--accent-soft); 
 }
