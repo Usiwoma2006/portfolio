@@ -2,7 +2,7 @@
 
 A scroll-driven personal portfolio. A welcome screen blows out to reveal a hero scene where the standing figure sits down to work, followed by my projects and contact details.
 
-**Live site:** https://YOUR-SITE.vercel.app
+**Live site:** https://portfolio-xi-seven-w45rzaoafi.vercel.app/
 
 ## Highlights
 
